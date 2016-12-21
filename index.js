@@ -21,6 +21,9 @@ app.post('/photos',(req,res)=>{
     var j=0;
     for(var key in req.body){
          rstreams[i]= request(req.body[key]);
+         if (!fs.existsSync(__dirname+'/photos')){
+               fs.mkdirSync(__dirname+'/photos');
+         }
          rstreams[i].pipe(fs.createWriteStream(__dirname+'/photos/'+key+'.jpg'));     
          rstreams[i].on('end',function(){
                 j++;
