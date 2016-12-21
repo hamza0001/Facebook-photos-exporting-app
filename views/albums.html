@@ -1,0 +1,12 @@
+<div ng-controller="PhotoController" ng-init="getAlbums()">
+    <div class="row" ng-repeat="album in albums | orderBy : name">
+           <div class="col-md-offset-2 col-md-4" ng-if="$even">
+                <h4>{{albums[$index].name}}</h2>
+                <a ui-sref="main.photos({albumID:albums[$index].id,albumName:albums[$index].name})"><img ng-src="{{albums[$index].src}}" class="img-thumbnail"></a>
+           </div>
+           <div class="col-md-4" ng-if="$even">
+                <h4>{{albums[$index+1].name}}</h2>
+                <a ui-sref="main.photos({albumID:albums[$index+1].id,albumName:albums[$index+1].name})"><img ng-src="{{albums[$index+1].src}}" class="img-thumbnail"></a>
+           </div>
+    </div>
+</div>

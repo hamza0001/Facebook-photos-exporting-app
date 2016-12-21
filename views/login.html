@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>photos exp</title>
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/jquery/dist/jquery.js"></script>
+        <script src="static/lodash/lodash.js"></script>
+        <script src="static/angular/angular.min.js"></script>
+        <script src="static/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="static/oclazyload/dist/ocLazyLoad.min.js"></script>
+        <script src="static/angular-utils-pagination/dirPagination.js"></script>
+        <script src="static/js/app.js"></script>
+        <script src="static/js/init.js"></script>
+        <script src="static/js/router.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ui-view>
+        <fb:login-button scope="user_photos,user_friends,public_profile,email" onlogin="checkLoginStatus();"></fb:login-button>
+        <div id="status"></div>
+    </div>
+</body>
+</html>

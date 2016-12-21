@@ -1,0 +1,41 @@
+.file-box {
+            float: left;
+            width: 220px;
+            }
+            .file-manager h5.tag-title {
+            margin-top: 20px;
+            }
+            .tag-list li {
+            float: left;
+            }
+            .tag-list li a {
+            font-size: 10px;
+            background-color: #f3f3f4;
+            padding: 5px 12px;
+            color: inherit;
+            border-radius: 2px;
+            border: 1px solid #e7eaec;
+            margin-right: 5px;
+            margin-top: 5px;
+            display: block;
+            }
+            .file {
+            border: 1px solid #e7eaec;
+            padding: 0;
+            background-color: #ffffff;
+            position: relative;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            }
+            .file-manager .hr-line-dashed {
+            margin: 15px 0;
+            }
+            .file .icon,
+            .file .image {
+            height: 100px;
+            overflow: hidden;
+            }
+            .file .icon {
+            padding: 15px 10px;
+            text-align: center;
+            }

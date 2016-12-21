@@ -1,0 +1,23 @@
+{
+  "name": "photos-albums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "el aoutar hamza",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-utils-pagination": "^0.11.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "nodemon": "^1.11.0",
+    "oclazyload": "1.0.3"
+  }
+}

@@ -1,0 +1,32 @@
+<div ng-controller="PhotoController" ng-init="getPhotos()">
+  <div class="col-lg-12">
+            <h3 class="page-header">{{albumName}}</h1>
+  </div>
+  <form ng-submit="downloadPhotos()">
+    <div class="row">
+      <div class="col-lg-12">
+              <input class="pull-right btn btn-success" value="Download!" type="submit">
+      </div>
+    </div>
+    <div class="row">
+      <div class="file-box"  dir-paginate="photo in photos | itemsPerPage: pageSize" current-page="currentPage">
+          <div class="file">
+                     <div class="image">
+                                   <img ng-src="{{photo.src}}" class="img-responsive">
+                     </div>
+                     <div class="file-name">
+                                    <button type="button" class="btn btn-sm btn-primary btn-radio">select <input type="checkbox" ng-model="selected[photo.id]"></button>
+                     </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<footer>
+  <div class="other-controller">
+      <div class="text-center">
+        <dir-pagination-controls boundary-links="true" template-url="/dirPagination.tpl.html"></dir-pagination-controls>
+      </div>
+  </div>
+</footer>
